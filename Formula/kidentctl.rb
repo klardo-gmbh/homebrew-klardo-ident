@@ -27,7 +27,10 @@ class Kidentctl < Formula
   end
 
   def install
-    bin.install Dir["kident_*/kidentctl"].first
+    # The tarball's one top-level directory (kident_vX.Y.Z_<goos>-<goarch>/) is
+    # what Homebrew stages into and changes into automatically, so the path
+    # here is relative to its contents, not to the tarball root.
+    bin.install "kidentctl"
   end
 
   test do
