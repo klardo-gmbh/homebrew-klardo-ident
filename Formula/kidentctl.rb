@@ -4,13 +4,13 @@
 class Kidentctl < Formula
   desc "Admin CLI for KlardoIdent, an OAuth 2.0 / OpenID Connect authorization server"
   homepage "https://klardo-ident.com"
-  version "0.5.6"
+  version "0.5.7"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/klardo-gmbh/klardo-ident/releases/download/v0.5.6/kident_v0.5.6_darwin-arm64.tar.gz"
-      sha256 "2d57355c58802b740c612e9a657bd618e9b132df068b3ccf15d8a4c3137fb2a3"
+      url "https://github.com/klardo-gmbh/klardo-ident/releases/download/v0.5.7/kident_v0.5.7_darwin-arm64.tar.gz"
+      sha256 "ba01b8787c35aa5afadf68c4075dc7c4a7ff638bbb947f79a36f060b2b20186b"
     else
       odie "kidentctl publishes an Apple Silicon build only; install the Linux binary under Rosetta, or ask about an Intel build."
     end
@@ -18,11 +18,11 @@ class Kidentctl < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/klardo-gmbh/klardo-ident/releases/download/v0.5.6/kident_v0.5.6_linux-arm64.tar.gz"
-      sha256 "c7a5027c3392d65c4380ccc7ec352eec1b6d5f7709707e32854f101e2b626463"
+      url "https://github.com/klardo-gmbh/klardo-ident/releases/download/v0.5.7/kident_v0.5.7_linux-arm64.tar.gz"
+      sha256 "d1d2c9510a8a6d84b39b51e1e247bdd5d8880f7a5963ed11131a8b99f47f7a79"
     else
-      url "https://github.com/klardo-gmbh/klardo-ident/releases/download/v0.5.6/kident_v0.5.6_linux-amd64.tar.gz"
-      sha256 "111360e5a511d726ad6e924af0e4ce5829e08e7378368b279d273c1043720abc"
+      url "https://github.com/klardo-gmbh/klardo-ident/releases/download/v0.5.7/kident_v0.5.7_linux-amd64.tar.gz"
+      sha256 "34f21d36ed71ea65562ce859ddc55075e636784d34d81427211aed29f913ea69"
     end
   end
 
